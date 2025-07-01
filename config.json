@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://httpstat.us/503",
+    "https://httpstat.us/200?sleep=5000",
+    "https://example.com",
+    "https://abcxyzfake.site",
+    "https://postman-echo.com/status/500"
+  ],
+  "retry_attempts": 2,
+  "timeout_seconds": 5,
+  "alert": {
+    "method": "telegram",
+    "telegram_bot_token": "7999119277:AAF-v2Xm2-Mmmu57uQ8KSy_BRGFtNSTOd5A",
+    "chat_id": "6002045226"
+  }
+}

@@ -1,0 +1,5 @@
+2025-07-01T11:56:20.031574,https://httpstat.us/503,DOWN,N/A
+2025-07-01T11:56:36.576885,https://httpstat.us/200?sleep=5000,DOWN,N/A
+2025-07-01T11:56:38.970658,https://example.com,UP,2.39
+2025-07-01T11:56:41.130820,https://abcxyzfake.site,DOWN,N/A
+2025-07-01T11:56:49.336880,https://postman-echo.com/status/500,DOWN,3.08
