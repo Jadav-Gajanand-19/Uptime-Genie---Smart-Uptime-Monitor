@@ -30,6 +30,6 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/<your-username>/UptimeGenie.git
+git clone https://github.com/Jadav-Gajanand-19/UptimeGenie.git
 cd UptimeGenie
 pip install -r requirements.txt
