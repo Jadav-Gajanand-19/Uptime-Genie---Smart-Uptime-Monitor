@@ -68,7 +68,7 @@ with st.form("add_url_form"):
 # Manual Global Check
 if st.button("🌀 Run Immediate Check on All Sites"):
     subprocess.run(["python", "monitor.py"])
-    st.experimental_rerun()
+    st.rerun()  # ✅ updated from experimental_rerun
 
 # Load all history
 df_all = pd.read_csv("logs/history.csv", header=None, names=["timestamp", "url", "status", "response_time"])
@@ -115,6 +115,6 @@ for _, row in latest.iterrows():
                           "\n".join(up_list) + "\n\n❌ DOWN Websites:\n" + "\n".join(down_list)
                 send_telegram_message(message)
                 st.success(f"✅ {row['url']} rechecked successfully — Status: {status} ({rt} ms)", icon="✅")
-                st.experimental_rerun()
+                st.rerun()  # ✅ updated from experimental_rerun
             except Exception as e:
                 st.error(f"❌ Recheck failed: {e}")
